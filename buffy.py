@@ -11,7 +11,8 @@ from google.genai import types
 from streamlit_gsheets import GSheetsConnection
 
 # --- API SETUP ---
-client = genai.Client(api_key="AIzaSyBwI5VmQ15PSKJzPfy31bplk10ZfYbWf24")
+# Now pulling securely from your secrets file
+client = genai.Client(api_key=st.secrets["GEMINI_API_KEY"])
 
 buffy_instruction = """
 You are Buffy, a ruthless fitness data analyst and the master of this app. Be short, aggressive, pushy, and heavily data-driven. The baseline calculates protein at 1g per lb of bodyweight. 
