@@ -1,0 +1,6 @@
+streamlit
+pandas
+numpy
+google-genai
+streamlit-echarts
+st-gsheets-connection
